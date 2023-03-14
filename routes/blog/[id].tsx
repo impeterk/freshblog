@@ -1,6 +1,7 @@
 import { h } from "preact";
 import { tw } from "twind";
 import { Post } from "../../utils/posts.ts";
+
 const post: Post = {
   id: "Hello",
   title: "Hello world",
@@ -8,6 +9,7 @@ const post: Post = {
   snippet: "hardocded post",
   content: "hello from fresh",
 };
+
 export default function Home() {
   return (
     <>
@@ -17,6 +19,7 @@ export default function Home() {
         </p>
         <h1 class={tw`text-5xl mt-4 font-bold`}>{post.title}</h1>
         <div class={tw`mt-12`}>
+          {post.snippet}
           {post.content}
         </div>
       </div>
