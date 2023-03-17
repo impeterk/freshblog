@@ -1,6 +1,6 @@
 ---
 title: second
-publish_at: 2023-02-27T18:41:24.767Z
+publishAt: 2023-02-27T18:41:24.767Z
 snippet: second post from fresh
 ---
 
