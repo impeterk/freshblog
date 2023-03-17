@@ -20,7 +20,7 @@ export async function loadPost(id: string): Promise<Post | null> {
   }
   const {attrs, body} = extract(text)
   const params = attrs as Record<string, string>;
-  const publishat = new Date(params.publishat)
+  const publishat = new Date(params.publishAt)
   return {
     id,
     title: params.title,
