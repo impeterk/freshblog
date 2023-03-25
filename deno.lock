@@ -154,6 +154,8 @@
     "https://deno.land/x/fresh@1.1.4/src/server/mod.ts": "72d213444334dd2e94c757a0eee0fc486c0919399ea9184d07ad042f34edd00d",
     "https://deno.land/x/fresh@1.1.4/src/server/render.ts": "6f50707bd1f6e33ed84bb71ae3b0996d202b953cefc4285f5356524c7b21f01f",
     "https://deno.land/x/fresh@1.1.4/src/server/types.ts": "dde992ab4ee635df71a7fc96fe4cd85943c1a9286ea8eb586563d5f5ca154955",
+    "https://deno.land/x/fresh_twindv1_plugin@v1.3.0/twind.ts": "4fb4680fb7133c5a3617cfa9653f4d51b4c5473b23fd5626a2b34965f0837b3b",
+    "https://deno.land/x/fresh_twindv1_plugin@v1.3.0/twind/shared.ts": "18d714de660ee37b2f19fd969ef2e45702369e6dc34fcabfbcb79ce2ffd6add4",
     "https://deno.land/x/importmap@0.2.1/_util.ts": "ada9a9618b537e6c0316c048a898352396c882b9f2de38aba18fd3f2950ede89",
     "https://deno.land/x/importmap@0.2.1/mod.ts": "ae3d1cd7eabd18c01a4960d57db471126b020f23b37ef14e1359bbb949227ade",
     "https://deno.land/x/rutt@0.0.13/mod.ts": "af981cfb95131152bf50fc9140fc00cb3efb6563df2eded1d408361d8577df20",
@@ -168,6 +170,9 @@
     "https://deno.land/x/ts_morph@16.0.0/ts_morph.d.ts": "38668b0e3780282a56a805425494490b0045d1928bd040c47a94095749dab8c3",
     "https://deno.land/x/ts_morph@16.0.0/ts_morph.js": "9fc0f3d6a3997c2df023fabc4e529d2117d214ffd4fd04247ca2f56c4e9cd470",
     "https://esm.sh/*preact-render-to-string@5.2.4": "5c965103e5039039a89c5de1f551a690aecd3918afe53b5d967ce5d96d939584",
+    "https://esm.sh/@twind/core@1.1.3": "c697b6eae2a259bb4720242d38c4a9d1d734a90cf05edf6823c95af7915716c9",
+    "https://esm.sh/@twind/preset-autoprefix@1.0.7": "ca80003f080d558068892565de467d814653c3d832ec473cd907a9bb6a08ca17",
+    "https://esm.sh/@twind/preset-tailwind@1.1.4": "ecbe9d213cbac7b6695994b2bf52e222002b3171c2be66ee791b2780d9edf3b2",
     "https://esm.sh/preact@10.11.0": "e888b244446037c56f1881173fb51d1f5fa7aae5599e6c5154619346a6a5094e",
     "https://esm.sh/preact@10.11.0/hooks": "2b8ec155eb8b87501663f074acff1d55a9114fa7d88f0b39da06c940af1ff736",
     "https://esm.sh/preact@10.11.0/jsx-runtime": "5c123264f19799ab243211132dded45f6d42d594b5c78dd585f947d07bf20eae",
@@ -198,6 +203,37 @@
     "https://esm.sh/v112/twind@0.16.17/colors/colors.d.ts": "5d718e9e958b108054073182c3a6b3a8c8352b4c9b2c520a15bdb56bac56868f",
     "https://esm.sh/v112/twind@0.16.17/deno/colors.js": "d7c8298203ba31c7da755b9ae2b4c9ff904d46562d268df1078ae7b6d0345b10",
     "https://esm.sh/v112/twind@0.16.17/deno/twind.mjs": "c9b8eb2f2187268f3345c8be6b5abd3cec2bdb59b6b63e12c021db2dba81ca11",
-    "https://esm.sh/v112/twind@0.16.17/twind.d.ts": "f0071b874b93857d485aaf8535438e05bc0068528da18b1ad9194aa35b3ef9e7"
+    "https://esm.sh/v112/twind@0.16.17/twind.d.ts": "f0071b874b93857d485aaf8535438e05bc0068528da18b1ad9194aa35b3ef9e7",
+    "https://esm.sh/v113/@twind/core@1.1.3/core.d.ts": "23b9b38d77b7a9f007a5266bfc6a6d7d82f35532f29a4ffc1e6430aac2b118d1",
+    "https://esm.sh/v113/@twind/core@1.1.3/deno/core.mjs": "9a65476bdc46aeb10894c4496fbfbc863e45ffebf43e58d6320017f847aca7b2",
+    "https://esm.sh/v113/@twind/preset-autoprefix@1.0.7/deno/preset-autoprefix.mjs": "f0dcc1180ad5f0079db31b0bef909c705ff9e5a5effbcfe1edf6596a692733de",
+    "https://esm.sh/v113/@twind/preset-autoprefix@1.0.7/preset-autoprefix.d.ts": "eabb172d4244d5110ff03ea52b7cfa806b56a417036c5407be3254581d2658b1",
+    "https://esm.sh/v113/@twind/preset-tailwind@1.1.4/deno/preset-tailwind.mjs": "d93fa57297976fa4d6d57a95e68c98fd4b3cbc1f6b72622b9022ed3536465cde",
+    "https://esm.sh/v113/@twind/preset-tailwind@1.1.4/preset-tailwind.d.ts": "4a4c59e8af822c319d855697108561c8f4141662de0d2b04e5b031840b232096",
+    "https://esm.sh/v113/csstype@3.1.1/index.d.ts": "1c29793071152b207c01ea1954e343be9a44d85234447b2b236acae9e709a383",
+    "https://esm.sh/v113/style-vendorizer@2.2.3/deno/style-vendorizer.mjs": "fb725497dd9621a84f552f9b6a4f3df82af5989ff18c40e972de1bdf475c9765"
+  },
+  "npm": {
+    "specifiers": {
+      "@twind/preset-tailwind": "@twind/preset-tailwind@1.1.4_@twind+core@1.1.3"
+    },
+    "packages": {
+      "@twind/core@1.1.3": {
+        "integrity": "sha512-/B/aNFerMb2IeyjSJy3SJxqVxhrT77gBDknLMiZqXIRr4vNJqiuhx7KqUSRzDCwUmyGuogkamz+aOLzN6MeSLw==",
+        "dependencies": {
+          "csstype": "csstype@3.1.1"
+        }
+      },
+      "@twind/preset-tailwind@1.1.4_@twind+core@1.1.3": {
+        "integrity": "sha512-zv85wrP/DW4AxgWrLfH7kyGn/KJF3K04FMLVl2AjoxZGYdCaoZDkL8ma3hzaKQ+WGgBFRubuB/Ku2Rtv/wjzVw==",
+        "dependencies": {
+          "@twind/core": "@twind/core@1.1.3"
+        }
+      },
+      "csstype@3.1.1": {
+        "integrity": "sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==",
+        "dependencies": {}
+      }
+    }
   }
 }

@@ -27,7 +27,7 @@ function PostEntry(props: { post: Post }) {
     <li class="border-t py-4 hover:bg-gradient-to-r from-gray-100 to-sky-100 rounded">
       <a class="flex gap-4 ml-8" href={`/blog/${post.id}`}>
         <p class="text-base">
-          {post.publishat.toLocaleDateString("sk-SK")}
+          {post.publishat.toLocaleDateString()}
         </p>
         <div>
           <h2 class="text-2xl text-sky-800">{post.title}</h2>

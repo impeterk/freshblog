@@ -1,4 +1,4 @@
-import {extract} from "$std/encoding/front_matter/any.ts"
+import { extract } from "$std/encoding/front_matter/any.ts";
 
 export interface Post {
   id: string;
@@ -18,25 +18,26 @@ export async function loadPost(id: string): Promise<Post | null> {
     }
     throw err;
   }
-  const {attrs, body} = extract(text)
+  const { attrs, body } = extract(text);
   const params = attrs as Record<string, string>;
-  const publishat = new Date(params.publishAt)
+  const publishat = new Date(params.publishAt);
   return {
     id,
     title: params.title,
     publishat,
     snippet: params.snippet,
-    content: body
-  }
+    content: body,
+  };
 }
 
 export async function listPosts(): Promise<Post[]> {
-  const promises = []
-  for await(const entry of Deno.readDir("./data/posts")) {
-  const id = entry.name.slice(0, -3);
-  promises.push(loadPost(id))
+  const promises = [];
+  for await (const entry of Deno.readDir("./data/posts")) {
+    const id = entry.name.slice(0, -3);
+    promises.push(loadPost(id));
   }
-  const posts = await Promise.all(promises) as Post[]
-  posts.sort((a, b) => b.publishat.getTime() - a.publishat.getTime())
-  return posts as Post[]
+  const posts = await Promise.all(promises) as Post[];
+  posts.sort((a, b) => b.publishat.getTime() - a.publishat.getTime());
+  return posts as Post[];
 }
+
