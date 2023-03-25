@@ -24,12 +24,12 @@ export default function Home(props: PageProps<Post[]>) {
 function PostEntry(props: { post: Post }) {
   const post = props.post;
   return (
-    <li class="border-t py-4 mt-4">
+    <li class="border-t py-4 hover:bg-gradient-to-r from-gray-100 to-sky-100 rounded">
       <a class="flex gap-4 ml-8" href={`/blog/${post.id}`}>
         <p class="text-base">
           {post.publishat.toLocaleDateString("sk-SK")}
         </p>
-        <div class="">
+        <div>
           <h2 class="text-2xl text-sky-800">{post.title}</h2>
           <p class="italic text-gray-600">{post.snippet}</p>
         </div>
