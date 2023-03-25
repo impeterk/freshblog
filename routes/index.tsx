@@ -23,11 +23,12 @@ export default function Home(props: PageProps<Post[]>) {
 }
 function PostEntry(props: { post: Post }) {
   const post = props.post;
+  const dateFmt = new Intl.DateTimeFormat("sk-SK", { dateStyle: "medium" });
   return (
     <li class="border-t py-4 hover:bg-gradient-to-r from-zinc-100 to-sky-100 rounded">
       <a class="flex gap-4 ml-8" href={`/blog/${post.id}`}>
         <p class="text-base">
-          {post.publishat.toLocaleDateString()}
+          {dateFmt.format(post.publishat)}
         </p>
         <div>
           <h2 class="text-2xl text-sky-800">{post.title}</h2>
