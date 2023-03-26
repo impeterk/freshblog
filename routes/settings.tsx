@@ -1,6 +1,7 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { State } from "../utils/state.ts";
 import { setCookie } from "$std/http/cookie.ts";
+import LocaleSelector from "../islands/LocaleSelector.tsx";
 export const handler: Handlers<State, State> = {
   GET(_req, ctx) {
     return ctx.render(ctx.state);
@@ -33,16 +34,7 @@ export default function SettingsPage(props: PageProps<State>) {
       <p class="mt-8 ">
         Your current locales are: <b>{locales[0]}</b>
       </p>
-      <form method="post" class="mt-4 space-x-2">
-        <label htmlFor="locale">Locale</label>
-        <input type="text" name="locale" id="locale" class="border px-2 py-1" />
-        <button
-          type="submit"
-          class="p-2 bg-sky(500 hover:700 disabled:200) text-zinc-300 font-medium rounded"
-        >
-          Save
-        </button>
-      </form>
+      <LocaleSelector />
     </div>
   );
 }
